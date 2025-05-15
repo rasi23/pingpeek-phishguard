@@ -1,114 +1,73 @@
-PhishGuard
-AI-Powered Email Phishing DetectionDeveloped by Team Ping Peek for ThinkFest Hackathon 2025
-Real-time phishing detection with 92% accuracy.
-Overview
-PhishGuard is an innovative email security platform that leverages AI to detect and mitigate phishing attacks in real time. With phishing responsible for 88% of data breaches (IBM, 2024), our solution empowers organizations and individuals with a user-friendly dashboard, interactive visualizations, and a tunable security threshold to balance protection and productivity.
-Key Features
+# Welcome to your Lovable project
 
-AI-Driven Detection: Uses NLP (NLTK, scikit-learn) and rule-based analysis for 92% accuracy.
-Real-Time Insights: Interactive dashboard with charts and metrics.
-Tunable Security Dial: Adjusts precision (89%) vs. recall (90%) to minimize false alarms (1/1,000 emails).
-Seamless Integration: Quarantines threats with toast notifications and no email delays.
+## Project info
 
-Demo
+**URL**: https://lovable.dev/projects/10904b5b-c8c5-4531-b2a7-25716c9c312d
 
-Video: Google Drive Link (Replace with your link, e.g., https://drive.google.com/file/d/xyz/view)
-Live Demo: Vercel URL (Replace with your link, e.g., https://phishguard-demo.vercel.app)
-Codebase: GitHub Repository
+## How can I edit this code?
 
-Installation
-Prerequisites
+There are several ways of editing your application.
 
-Node.js (v16+): For React frontend.
-Python (3.8+): For backend with NLTK, scikit-learn.
-Git: To clone the repository.
+**Use Lovable**
 
-Setup
+Simply visit the [Lovable Project](https://lovable.dev/projects/10904b5b-c8c5-4531-b2a7-25716c9c312d) and start prompting.
 
-Clone the Repository:
-git clone https://github.com/rasi23/pingpeek-phishguard.git
-cd pingpeek-phishguard
+Changes made via Lovable will be committed automatically to this repo.
 
+**Use your preferred IDE**
 
-Frontend (React):
-cd frontend
-npm install
-npm start
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Opens at http://localhost:3000.
+Follow these steps:
 
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Backend (Python):
-cd backend
-python -m venv env
-.\env\Scripts\activate  # Windows
-pip install -r requirements.txt
-python main.py
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
+# Step 3: Install the necessary dependencies.
+npm i
 
-Runs API at http://localhost:5000.
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
+**Edit a file directly in GitHub**
 
-Environment Variables:
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Create .env in frontend/ and backend/ (see .env.example for API keys, e.g., VirusTotal).
+**Use GitHub Codespaces**
 
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## What technologies are used for this project?
 
-Technologies
+This project is built with:
 
-Frontend: React, TypeScript, Tailwind CSS, React Router DOM.
-Backend: Python, Flask, NLTK, scikit-learn, VirusTotal API.
-AI Tools: Lovable AI, GitHub Copilot for development efficiency.
-Deployment: Vercel (frontend), mock API for demo.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-Project Structure
-pingpeek-phishguard/
-├── frontend/
-│   ├── src/
-│   ├── api.ts
-│   ├── use-toast.ts
-├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-├── README.md
-├── .gitignore
+## How can I deploy this project?
 
-Usage
+Simply open [Lovable](https://lovable.dev/projects/10904b5b-c8c5-4531-b2a7-25716c9c312d) and click on Share -> Publish.
 
-Analyze Emails: Input email content via the dashboard for real-time verdict and confidence score.
-View Metrics: Explore charts (e.g., Confusion Matrix, Precision-Recall Curve).
-Quarantine Threats: Use one-click quarantine with toast notifications.
-Tune Security: Adjust the threshold slider for security vs. productivity.
+## Can I connect a custom domain to my Lovable project?
 
-Results
+Yes, you can!
 
-Accuracy: 92% phishing detection rate.
-False Alarms: 1 per 1,000 emails.
-Latency: No noticeable email delays.
-Robustness: Handles 95% of edge cases (ongoing optimization).
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Future Enhancements
-
-Short-Term: REST API backend, user authentication.
-Long-Term: BERT-based ML, multilingual NLP, GDPR/CCPA compliance.
-Vision: Global email security platform.
-
-Team Ping Peek
-
-Eric: Frontend Lead (React, TypeScript).
-Farindu: Backend Lead (Python, Flask).
-Ashini: AI/ML Specialist (NLTK, scikit-learn).
-Viranga: Security Analyst (VirusTotal, UI/UX).
-
-Contributing
-We welcome contributions! Fork the repo, create a pull request, or report issues:
-
-Issues: GitHub Issues
-Contact: team@pingpeek.com
-
-License
-MIT License © 2025 Team Ping Peek
-
-Built with 💻 for ThinkFest Hackathon 2025. Join us to make email security smarter!
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
