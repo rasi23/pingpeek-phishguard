@@ -2,17 +2,13 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/10904b5b-c8c5-4531-b2a7-25716c9c312d
+**URL**:phishing-threat-vision.lovable.app
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/10904b5b-c8c5-4531-b2a7-25716c9c312d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
