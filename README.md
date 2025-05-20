@@ -1,4 +1,4 @@
-# PhishGuard
+![image](https://github.com/user-attachments/assets/1cd45030-f219-4e90-8579-14c8ff28f59a)![image](https://github.com/user-attachments/assets/29b19c32-9325-4f5e-ae95-a4fcb21eac41)# PhishGuard
 
 ## Overview
 PhishGuard is an AI-powered phishing email detection system developed by Team Ping Peek (Eric, Farindu, Ashini, Viranga) for ThinkFest Hackathon 2025. With 92% accuracy, it analyzes emails in real-time (0.15s latency) using NLP and rule-based AI, protecting users from 88% of data breaches caused by phishing (IBM 2024). Features include:
@@ -100,6 +100,10 @@ Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and report issues on [Gi
 MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
-- Team: [team@pingpeek.com](mailto:team@pingpeek.com)
+- Our Team:
+             - RASINDU ILLANGRATHNE (Backend/UI UX Architect)
+             - VIRANGA THULSHAN (ML Engineer)
+             - ERICA DILSHANI (Frontend Developer)
+             - ASHINI NANAYAKKARA (Security Researcher)
 - GitHub: [github.com/rasi23/pingpeek-phishguard](https://github.com/rasi23/pingpeek-phishguard)
 - Demo: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)
