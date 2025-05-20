@@ -1,109 +1,174 @@
-![image](https://github.com/user-attachments/assets/1cd45030-f219-4e90-8579-14c8ff28f59a)![image](https://github.com/user-attachments/assets/29b19c32-9325-4f5e-ae95-a4fcb21eac41)# PhishGuard
 
-## Overview
-PhishGuard is an AI-powered phishing email detection system developed by Team Ping Peek (Eric, Farindu, Ashini, Viranga) for ThinkFest Hackathon 2025. With 92% accuracy, it analyzes emails in real-time (0.15s latency) using NLP and rule-based AI, protecting users from 88% of data breaches caused by phishing (IBM 2024). Features include:
+# 🛡️ PhishGuard – Real-Time Phishing Detection
 
-- **Real-Time Detection**: Combines NLTK, scikit-learn, and VirusTotal API for 92% accuracy and 89% precision (10,000-email tests).
-- **Interactive Dashboard**: React/TypeScript UI with a customizable security slider and visualizations (ROC Curve, Confusion Matrix).
-- **Scalable Backend**: Python/Flask processes emails, with REST API planned for 2025.
-- **Demo**: Try it at [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/).
+PhishGuard is an AI-powered phishing email detection system developed by **Team Ping Peek** (Rasindu, Viranga, Erica, Ashini) for the **ThinkFest Hackathon 2025**. It leverages NLP, rule-based AI, and VirusTotal analysis to identify phishing attempts with **92% accuracy** in **0.15 seconds**, helping mitigate the 88% of data breaches caused by phishing (IBM, 2024).
 
-## Technology Stack
-- **Frontend**: React, TypeScript, Material-UI, Chart.js
-- **Backend**: Python, Flask, NLTK, scikit-learn, VirusTotal API
-- **Tools**: Lovable AI (UI design), GitHub Copilot (development), Jest (testing)
-- **Deployment**: Vercel (frontend), local server (backend)
+🔗 **Live Demo**: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)
 
-## Installation
-### Prerequisites
-- Node.js (v18+)
-- Python (3.9+)
+---
+
+## 🚀 Key Features
+
+- **🔍 Real-Time Detection**  
+  Combines NLTK, scikit-learn, and VirusTotal API for high-precision threat analysis.
+
+- **📊 Interactive Dashboard**  
+  Built with React & TypeScript, featuring an adjustable security threshold and intuitive data visualizations.
+
+- **⚙️ Scalable Python Backend**  
+  Flask-powered backend processes `.eml` files, with a REST API coming soon.
+
+---
+
+## 🧠 Tech Stack
+
+| Layer       | Technologies Used                                      |
+|-------------|--------------------------------------------------------|
+| **Frontend** | React, TypeScript, Material-UI, Chart.js               |
+| **Backend**  | Python, Flask, scikit-learn, NLTK, VirusTotal API      |
+| **Tools**    | Lovable AI (UI design), GitHub Copilot, Jest (testing) |
+| **Deploy**   | Vercel (Frontend), Localhost (Backend)                 |
+
+---
+
+## 📦 Installation
+
+### ✅ Prerequisites
+- Node.js v18+
+- Python 3.9+
 - Git
-- VirusTotal API key (add to `backend/.env`)
+- VirusTotal API Key
 
-### Steps
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/rasi23/pingpeek-phishguard.git
-   cd pingpeek-phishguard
-   ```
-2. **Frontend Setup**:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-   - Access at `http://localhost:5173`.
-3. **Backend Setup**:
-   ```bash
-   cd backend
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-   - Add VirusTotal API key to `backend/.env`:
-     ```
-     VIRUSTOTAL_API_KEY=your_api_key_here
-     ```
-   - Run:
-     ```bash
-     python main.py
-     ```
-   - Access at `http://localhost:5000`.
-4. **Test Data**:
-   - Place `.eml` files in `backend/emails/` for analysis (see `backend/emails/sample.eml`).
+### 🛠️ Setup Instructions
 
-## Usage
-1. **Run Application**:
-   - Start frontend (`npm run dev`) and backend (`python main.py`).
-   - Open `http://localhost:5173` in a browser.
-2. **Analyze Emails**:
-   - Upload an email or input text in the dashboard.
-   - View verdict (e.g., “Phishing, 92% confidence”), rules triggered (e.g., “Suspicious Sender”), and visualizations.
-   - Adjust the security slider to balance false positives (see demo: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)).
-3. **Metrics**:
-   - Accuracy: 92%, Precision: 89%, Recall: 90%, Latency: 0.15s (10,000-email tests).
-   - See `docs/results.md` for detailed metrics and Confusion Matrix.
-
-## Project Structure
+```bash
+# Clone the repository
+git clone https://github.com/rasi23/pingpeek-phishguard.git
+cd pingpeek-phishguard
 ```
+
+#### 🔧 Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+# App runs on http://localhost:5173
+```
+
+#### 🐍 Backend Setup
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Create a `.env` file in `backend/`:
+
+```env
+VIRUSTOTAL_API_KEY=your_api_key_here
+```
+
+Then run:
+
+```bash
+python main.py
+# API runs on http://localhost:5000
+```
+
+---
+
+## 🧪 Usage Guide
+
+1. **Start the app**: Run both frontend and backend.
+2. **Upload or input email**: Use the dashboard to analyze.
+3. **View results**:
+   - Classification (e.g., "Phishing – 92% confidence")
+   - Triggered rules (e.g., "Suspicious Sender")
+   - Visualizations (ROC curve, confusion matrix)
+4. **Adjust detection sensitivity** using the interactive security slider.
+
+📂 To test, add `.eml` files in: `backend/emails/`  
+🧾 Example file: `backend/emails/sample.eml`
+
+---
+
+## 📊 Performance Metrics
+
+| Metric     | Value       |
+|------------|-------------|
+| Accuracy   | 92%         |
+| Precision  | 89%         |
+| Recall     | 90%         |
+| Latency    | 0.15 sec    |
+
+📄 Detailed results in [`docs/results.md`](docs/results.md)
+
+---
+
+## 📁 Project Structure
+
+```plaintext
 pingpeek-phishguard/
-├── frontend/                 # React/TypeScript UI
-│   ├── src/
-│   │   ├── components/       # StatsCard, ThreatChart, EmailList
-│   │   ├── pages/            # DashboardPage, EmailAnalysis
-│   │   └── App.tsx
-├── backend/                  # Python/Flask backend
-│   ├── emails/               # Sample .eml files
-│   ├── detector.py           # Phishing detection logic
-│   ├── main.py               # Flask app
-│   └── .env                  # Environment variables
-├── docs/                     # Results, architecture
+├── frontend/       # React UI
+│   └── src/
+│       ├── components/  # StatsCard, ThreatChart, etc.
+│       ├── pages/       # Dashboard, EmailAnalysis
+│       └── App.tsx
+├── backend/        # Flask backend
+│   ├── emails/     # Test email files
+│   ├── detector.py # Detection logic
+│   └── main.py     # Flask app entry
+├── docs/           # Metrics, architecture docs
 └── README.md
 ```
 
-## Contributing
-We welcome contributions! To contribute:
-1. Fork the repository.
-2. Create a branch (`git checkout -b feature/your-feature`).
-3. Commit changes (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
+---
 
-Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and report issues on [GitHub Issues](https://github.com/rasi23/pingpeek-phishguard/issues).
+## 🤝 Contributing
 
-## Future Enhancements
-- 2025: REST API for scalability.
-- 2026: BERT for multilingual NLP and deeper detection.
+We welcome contributions from the community!
 
-## License
-MIT License. See [LICENSE](LICENSE) for details.
+1. Fork the repo
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Make your changes & commit:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push and open a pull request:
+   ```bash
+   git push origin feature/your-feature
+   ```
 
-## Contact
-- Our Team:
-             RASINDU ILLANGRATHNE (Backend/UI UX Architect)
-             VIRANGA THULSHAN (ML Engineer)
-             ERICA DILSHANI (Frontend Developer)
-             ASHINI NANAYAKKARA (Security Researcher)
-- GitHub: [github.com/rasi23/pingpeek-phishguard](https://github.com/rasi23/pingpeek-phishguard)
-- Demo: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)
+🔖 Please review our [Code of Conduct](CODE_OF_CONDUCT.md) and use [GitHub Issues](https://github.com/rasi23/pingpeek-phishguard/issues) for reporting bugs or suggestions.
+
+---
+
+## 🧭 Roadmap
+
+- ✅ Real-time detection with rule-based + ML
+- 🛠️ **2025**: REST API integration for broader compatibility
+- 🌍 **2026**: Multilingual phishing detection using BERT
+
+---
+
+## 📄 License
+
+MIT License. See [LICENSE](LICENSE) for full terms.
+
+---
+
+## 👥 Team Ping Peek
+
+| Name                 | Role                         |
+|----------------------|------------------------------|
+| Rasindu Illangaratne | Backend / UI-UX Architect    |
+| Viranga Thulshan     | ML Engineer                  |
+| Erica Dilshani       | Frontend Developer           |
+| Ashini Nanayakkara   | Security Researcher          |
+
+🔗 GitHub: [rasi23/pingpeek-phishguard](https://github.com/rasi23/pingpeek-phishguard)  
+🌐 Demo: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)
