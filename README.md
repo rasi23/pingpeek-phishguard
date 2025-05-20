@@ -101,9 +101,9 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contact
 - Our Team:
-             - RASINDU ILLANGRATHNE (Backend/UI UX Architect)
-             - VIRANGA THULSHAN (ML Engineer)
-             - ERICA DILSHANI (Frontend Developer)
-             - ASHINI NANAYAKKARA (Security Researcher)
+             RASINDU ILLANGRATHNE (Backend/UI UX Architect)
+             VIRANGA THULSHAN (ML Engineer)
+             ERICA DILSHANI (Frontend Developer)
+             ASHINI NANAYAKKARA (Security Researcher)
 - GitHub: [github.com/rasi23/pingpeek-phishguard](https://github.com/rasi23/pingpeek-phishguard)
 - Demo: [phishing-threat-vision.lovable.app](https://phishing-threat-vision.lovable.app/)
